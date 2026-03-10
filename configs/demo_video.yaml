@@ -1,0 +1,77 @@
+# enemy_color: "red"
+enemy_color: "blue"
+
+#####-----神经网络参数-----#####
+yolo_name: yolov5
+classify_model: assets/tiny_resnet.onnx
+yolo11_model_path: assets/yolo11.xml
+yolov8_model_path: assets/yolov8.xml
+yolov5_model_path: assets/yolov5.xml
+device: CPU
+min_confidence: 0.8
+use_traditional: true
+
+#####-----ROI-----#####
+roi:
+  x: 420
+  y: 50
+  width: 600
+  height: 600
+
+use_roi: false
+
+#####-----传统方法参数-----#####
+threshold: 150
+max_angle_error: 45 # degree
+min_lightbar_ratio: 1.5
+max_lightbar_ratio: 20
+min_lightbar_length: 8
+min_armor_ratio: 1
+max_armor_ratio: 5
+max_side_ratio: 1.5
+max_rectangular_error: 25 # degree
+
+#####-----tracker参数-----#####
+min_detect_count: 5
+max_temp_lost_count: 15
+outpost_max_temp_lost_count: 75
+
+#####-----aimer参数-----#####
+yaw_offset: -1 # degree
+pitch_offset: -1.4 # degree
+comming_angle: 60 # degree
+leaving_angle: 20 # degree
+decision_speed: 8 # rad/s
+high_speed_delay_time: 0.030 # s
+low_speed_delay_time: 0.015 # s
+
+#####-----shooter参数-----#####
+first_tolerance: 3
+second_tolerance: 2
+judge_distance: 2
+auto_fire: true
+
+#####-----USB相机参数（从视频文件读取）-----#####
+camera_name: "usbcamera"
+video_path: "assets/demo/demo.avi"
+exposure_ms: 2
+image_width: 640
+image_height: 480
+usb_frame_rate: 30
+usb_exposure: 250
+usb_gamma: 160
+usb_gain: 10
+
+#####-----云台-IMU关系-----#####
+R_gimbal2imubody: [1, 0, 0, 0, 1, 0, 0, 0, 1]
+
+#####-----相机标定参数-----#####
+# 迈德威视相机
+camera_matrix: [712.9215287852671, 0.0, 307.8615217208748,
+                0.0, 714.6431520641138, 256.8790022083954,
+                0.0, 0.0, 1.0]
+distort_coeffs: [-0.447569535375274, -0.000446903384808, 0.000278897924377, 0.001563208302172]
+
+# 相机到云台的外参
+R_camera2gimbal: [-0.0083195760046954614, 0.010498791137270739, 0.99991027599468041, -0.99960756138647755, -0.026835747568381807, -0.0080352891314148939, 0.026748978935305992, -0.99958472279097077, 0.010717933047771133]
+t_camera2gimbal: [0.094969301833534511, 0.095006290298006682, 0.050987066291756609]

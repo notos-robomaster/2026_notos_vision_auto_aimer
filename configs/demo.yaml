@@ -1,0 +1,160 @@
+# enemy_color: "red"
+enemy_color: "blue"
+
+#####-----神经网络参数-----#####
+yolo_name: yolov5
+classify_model: assets/tiny_resnet.onnx
+yolo11_model_path: assets/yolo11.xml
+yolov8_model_path: assets/yolov8.xml
+yolov5_model_path: assets/yolov5.xml
+device: CPU
+min_confidence: 0.8
+use_traditional: true
+
+#####-----ROI-----#####
+roi:
+  x: 420
+  y: 50
+  width: 600
+  height: 600
+
+use_roi: false
+
+#####-----传统方法参数-----#####
+threshold: 150
+max_angle_error: 45 # degree
+min_lightbar_ratio: 1.5
+max_lightbar_ratio: 20
+min_lightbar_length: 8
+min_armor_ratio: 1
+max_armor_ratio: 5
+max_side_ratio: 1.5
+max_rectangular_error: 25 # degree
+#min_confidence: 0.8
+
+#####-----tracker参数-----#####
+min_detect_count: 5
+max_temp_lost_count: 15
+outpost_max_temp_lost_count: 75
+
+#####-----aimer参数-----#####
+yaw_offset: -2 # degree (打击点偏左时减小此值，偏右时增大)
+pitch_offset: -0.5 # degree (打击点偏低时增大此值，使云台抬高)
+comming_angle: 60 # degree
+leaving_angle: 20 # degree
+decision_speed: 8 # rad/s
+high_speed_delay_time: 0.1 # s (原0.03，增大以补偿云台响应+触发延迟)
+low_speed_delay_time: 0.05 # s (原0.015，恢复注释中"发弹延时0.1"的设计值)
+
+#####-----shooter参数-----#####
+first_tolerance: 3 # 近距离射击容差，degree
+second_tolerance: 2 # 远距离射击容差，degree
+judge_distance: 2 #距离判断阈值
+auto_fire: true # 是否由自瞄控制射击
+
+camera_name: "hikrobot"
+exposure_ms: 2  #海康1
+gain: 16
+vid_pid: "2bdf:0001"
+#exposure_ms: 22 #海康2
+#gain: 23.0052
+
+
+#camera_name: "mindvision"
+#exposure_ms: 2
+#gamma: 1 #1 #0.5
+#vid_pid: "f622:d13a"
+
+# -1  0  0
+#  0 -1  0
+#  0  0  1
+R_gimbal2imubody: [1, 0, 0, 0, 1, 0,  0, 0, 1]
+
+## 重投影误差: 0.2697px 海康1
+camera_matrix: [901.628836608727, 0, 368.99147138139285,
+                0, 903.1485486250545, 281.9078681333959,
+                0, 0, 1]
+distort_coeffs: [-0.447569535375274,
+                 -0.000446903384808,
+                 0.000278897924377,
+                 0.001563208302172,
+                 0.0]
+
+###海康2
+#camera_matrix: [1303.668019843536, 0, 605.5459619947927,
+#  0, 1307.370523093999, 491.0024989589119 ,
+#  0, 0, 1]
+#distort_coeffs: [-0.1517024801121463, 1.36913942428847, 0.001947998550742882, -0.0265752698139803, -3.116005171381771]
+
+###迈德威视1
+#camera_matrix: [712.9215287852671,0.0,307.8615217208748,
+#                0.0,714.6431520641138, 256.8790022083954 ,0.0,0.0,  1.0]
+#distort_coeffs: [-0.447569535375274, -0.000446903384808, 0.000278897924377, 0.001563208302172]
+
+# 相机同理想情况的偏角: yaw0.46 pitch0.61 roll-1.53 degree
+R_camera2gimbal: [-0.0083195760046954614, 0.010498791137270739, 0.99991027599468041, -0.99960756138647755, -0.026835747568381807, -0.0080352891314148939, 0.026748978935305992, -0.99958472279097077, 0.010717933047771133]
+t_camera2gimbal: [0.094969301833534511, 0.095006290298006682, 0.050987066291756609]
+
+
+
+## 相机-云台欧拉角: yaw-2.82 pitch13.98 roll-11.83 degree
+#R_camera2gimbal: [0.96923028656937027, -0.0013350301905320349, 0.24615212631835337, -0.047683077348434473, 0.98002593792682591, 0.19306860212170318, -0.24149322088050307, -0.19886522744068577, 0.94980716231439577]
+#t_camera2gimbal: [0.044777864880347747, 0.30063759689449843, -0.1874636369021033]
+## 相机-云台欧拉角: yaw-15.13 pitch2.36 roll18.74 degree
+#R_camera2gimbal: [0.96451520399083401, 0.25995065027208042, -0.046217753013775544, -0.26079546582157492, 0.91069383327022102, -0.32034741617578028, -0.041184296490623294, 0.32103333388717342, 0.94617199929815032]
+#t_camera2gimbal: [0.1141893724053766, 0.59501641751213363, -0.090169028241330551]
+#####-----cboard参数-----#####
+quaternion_canid: 0x100
+bullet_speed_canid: 0x101
+send_canid: 0xff
+can_interface: "can0"
+
+#####-----控制模式参数-----#####
+use_mpc: false         # true: 使用MPC Planner, false: 使用传统Aimer
+use_serial: false      # true: 通过串口发送控制指令, false: 打印到控制台
+simple_serial: true    # true: 只发送yaw/pitch位置（不需要四元数反馈）, false: 完整通信
+angle_mode: true      # true: 下位机传yaw/pitch角度（上位机自动转四元数）, false: 下位机传四元数
+
+#####-----gimbal参数-----#####
+com_port: "/dev/ttyUSB0"  # 串口设备路径
+
+#####-----planner-----#####
+fire_thresh: 0.003
+
+max_yaw_acc: 50
+Q_yaw: [9e6, 0]
+R_yaw: [1]
+
+max_pitch_acc: 100
+Q_pitch: [9e6,0]
+R_pitch: [1]
+
+#####-----buff_detector参数-----#####
+detect:
+  contrast: 1
+  brightness:
+    blue: -120
+    red: -100
+  brightness_threshold:
+    blue: 120
+    red: 40
+  morphology_size:
+    blue: 3
+    red: 3
+  dilate_size: 2
+  # canny_low_threshold: 100
+  # canny_high_threshold: 180
+  # approx_epsilon: 1.0
+  R_contours_min_area: 200
+  R_contours_max_area: 600
+  fanblades_head_contours_min_area: 3000
+  fanblades_head_contours_max_area: 8000
+  fanblades_body_contours_min_area: 1000
+  fanblades_body_contours_max_area: 4000
+  standard_fanblade_path: ./assets/standard_fanblade.jpg
+
+#####-----buff_aimer参数-----#####
+aim_time: 0.150         # s
+wait_time: 0.300        # s
+command_fire_gap: 0.080 # s
+predict_time: 0.200     # s 预测时间 0.150s
