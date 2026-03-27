@@ -12,8 +12,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/armor.cpp" "tasks/auto_aim/CMakeFiles/auto_aim.dir/armor.cpp.o" "gcc" "tasks/auto_aim/CMakeFiles/auto_aim.dir/armor.cpp.o.d"
   "/home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/classifier.cpp" "tasks/auto_aim/CMakeFiles/auto_aim.dir/classifier.cpp.o" "gcc" "tasks/auto_aim/CMakeFiles/auto_aim.dir/classifier.cpp.o.d"
   "/home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/detector.cpp" "tasks/auto_aim/CMakeFiles/auto_aim.dir/detector.cpp.o" "gcc" "tasks/auto_aim/CMakeFiles/auto_aim.dir/detector.cpp.o.d"
-  "/home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/multithread/commandgener.cpp" "tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.o" "gcc" "tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.o.d"
-  "/home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/multithread/mt_detector.cpp" "tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/mt_detector.cpp.o" "gcc" "tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/mt_detector.cpp.o.d"
   "/home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/planner/planner.cpp" "tasks/auto_aim/CMakeFiles/auto_aim.dir/planner/planner.cpp.o" "gcc" "tasks/auto_aim/CMakeFiles/auto_aim.dir/planner/planner.cpp.o.d"
   "/home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/shooter.cpp" "tasks/auto_aim/CMakeFiles/auto_aim.dir/shooter.cpp.o" "gcc" "tasks/auto_aim/CMakeFiles/auto_aim.dir/shooter.cpp.o.d"
   "/home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/solver.cpp" "tasks/auto_aim/CMakeFiles/auto_aim.dir/solver.cpp.o" "gcc" "tasks/auto_aim/CMakeFiles/auto_aim.dir/solver.cpp.o.d"

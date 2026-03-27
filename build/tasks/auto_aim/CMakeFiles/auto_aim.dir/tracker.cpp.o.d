@@ -744,23 +744,34 @@ tasks/auto_aim/CMakeFiles/auto_aim.dir/tracker.cpp.o: \
  /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/target.hpp \
  /usr/include/c++/11/optional \
  /home/oconnor/Downloads/sp_vision_25-main/tools/extended_kalman_filter.hpp \
- /home/oconnor/Downloads/sp_vision_25-main/tasks/omniperception/perceptron.hpp \
- /home/oconnor/Downloads/sp_vision_25-main/tasks/omniperception/decider.hpp \
- /home/oconnor/Downloads/sp_vision_25-main/tasks/omniperception/detection.hpp \
- /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/armor.hpp \
- /home/oconnor/Downloads/sp_vision_25-main/io/camera.hpp \
- /home/oconnor/Downloads/sp_vision_25-main/io/command.hpp \
- /home/oconnor/Downloads/sp_vision_25-main/io/usbcamera/usbcamera.hpp \
  /home/oconnor/Downloads/sp_vision_25-main/tools/thread_safe_queue.hpp \
- /usr/include/c++/11/condition_variable \
- /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/target.hpp \
- /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/yolo.hpp \
- /home/oconnor/Downloads/sp_vision_25-main/tools/thread_pool.hpp \
+ /usr/include/c++/11/condition_variable /usr/include/yaml-cpp/yaml.h \
+ /usr/include/yaml-cpp/parser.h /usr/include/yaml-cpp/dll.h \
+ /usr/include/yaml-cpp/emitter.h /usr/include/yaml-cpp/binary.h \
+ /usr/include/yaml-cpp/emitterdef.h /usr/include/yaml-cpp/emittermanip.h \
+ /usr/include/yaml-cpp/null.h /usr/include/yaml-cpp/ostream_wrapper.h \
+ /usr/include/yaml-cpp/emitterstyle.h /usr/include/yaml-cpp/stlemitter.h \
+ /usr/include/yaml-cpp/exceptions.h /usr/include/yaml-cpp/mark.h \
+ /usr/include/yaml-cpp/noexcept.h /usr/include/yaml-cpp/traits.h \
+ /usr/include/yaml-cpp/node/node.h \
+ /usr/include/yaml-cpp/node/detail/iterator_fwd.h \
+ /usr/include/yaml-cpp/node/ptr.h /usr/include/yaml-cpp/node/type.h \
+ /usr/include/yaml-cpp/node/impl.h \
+ /usr/include/yaml-cpp/node/detail/memory.h \
+ /usr/include/yaml-cpp/node/detail/node.h \
+ /usr/include/yaml-cpp/node/detail/node_ref.h \
+ /usr/include/yaml-cpp/node/detail/node_data.h \
+ /usr/include/yaml-cpp/node/detail/node_iterator.h \
+ /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
+ /usr/include/yaml-cpp/node/iterator.h \
+ /usr/include/yaml-cpp/node/detail/iterator.h \
+ /usr/include/yaml-cpp/node/convert.h \
+ /usr/include/yaml-cpp/node/detail/impl.h \
+ /usr/include/yaml-cpp/node/parse.h /usr/include/yaml-cpp/node/emit.h \
  /home/oconnor/Downloads/sp_vision_25-main/tools/logger.hpp \
  /usr/include/spdlog/spdlog.h /usr/include/spdlog/common.h \
  /usr/include/spdlog/tweakme.h /usr/include/spdlog/details/null_mutex.h \
  /usr/include/spdlog/fmt/fmt.h /usr/include/fmt/core.h \
- /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
  /usr/include/fmt/format.h /usr/include/fmt/core.h \
  /usr/include/spdlog/common-inl.h /usr/include/spdlog/details/registry.h \
  /usr/include/spdlog/details/registry-inl.h \
@@ -815,26 +826,5 @@ tasks/auto_aim/CMakeFiles/auto_aim.dir/tracker.cpp.o: \
  /usr/include/spdlog/sinks/ansicolor_sink-inl.h \
  /usr/include/spdlog/version.h \
  /usr/include/spdlog/details/synchronous_factory.h \
- /usr/include/spdlog/spdlog-inl.h /usr/include/yaml-cpp/yaml.h \
- /usr/include/yaml-cpp/parser.h /usr/include/yaml-cpp/dll.h \
- /usr/include/yaml-cpp/emitter.h /usr/include/yaml-cpp/binary.h \
- /usr/include/yaml-cpp/emitterdef.h /usr/include/yaml-cpp/emittermanip.h \
- /usr/include/yaml-cpp/null.h /usr/include/yaml-cpp/ostream_wrapper.h \
- /usr/include/yaml-cpp/emitterstyle.h /usr/include/yaml-cpp/stlemitter.h \
- /usr/include/yaml-cpp/exceptions.h /usr/include/yaml-cpp/mark.h \
- /usr/include/yaml-cpp/noexcept.h /usr/include/yaml-cpp/traits.h \
- /usr/include/yaml-cpp/node/node.h \
- /usr/include/yaml-cpp/node/detail/iterator_fwd.h \
- /usr/include/yaml-cpp/node/ptr.h /usr/include/yaml-cpp/node/type.h \
- /usr/include/yaml-cpp/node/impl.h \
- /usr/include/yaml-cpp/node/detail/memory.h \
- /usr/include/yaml-cpp/node/detail/node.h \
- /usr/include/yaml-cpp/node/detail/node_ref.h \
- /usr/include/yaml-cpp/node/detail/node_data.h \
- /usr/include/yaml-cpp/node/detail/node_iterator.h \
- /usr/include/yaml-cpp/node/iterator.h \
- /usr/include/yaml-cpp/node/detail/iterator.h \
- /usr/include/yaml-cpp/node/convert.h \
- /usr/include/yaml-cpp/node/detail/impl.h \
- /usr/include/yaml-cpp/node/parse.h /usr/include/yaml-cpp/node/emit.h \
+ /usr/include/spdlog/spdlog-inl.h \
  /home/oconnor/Downloads/sp_vision_25-main/tools/math_tools.hpp

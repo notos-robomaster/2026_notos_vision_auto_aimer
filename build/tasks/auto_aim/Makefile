@@ -127,25 +127,25 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-tasks/auto_aim/CMakeFiles/auto_aim.dir/rule:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tasks/auto_aim/CMakeFiles/auto_aim.dir/rule
-.PHONY : tasks/auto_aim/CMakeFiles/auto_aim.dir/rule
+tasks/auto_aim/CMakeFiles/task_auto_aim.dir/rule:
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tasks/auto_aim/CMakeFiles/task_auto_aim.dir/rule
+.PHONY : tasks/auto_aim/CMakeFiles/task_auto_aim.dir/rule
 
 # Convenience name for target.
-auto_aim: tasks/auto_aim/CMakeFiles/auto_aim.dir/rule
-.PHONY : auto_aim
+task_auto_aim: tasks/auto_aim/CMakeFiles/task_auto_aim.dir/rule
+.PHONY : task_auto_aim
 
 # fast build rule for target.
-auto_aim/fast:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/build
-.PHONY : auto_aim/fast
+task_auto_aim/fast:
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build
+.PHONY : task_auto_aim/fast
 
 aimer.o: aimer.cpp.o
 .PHONY : aimer.o
 
 # target to build an object file
 aimer.cpp.o:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/aimer.cpp.o
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/aimer.cpp.o
 .PHONY : aimer.cpp.o
 
 aimer.i: aimer.cpp.i
@@ -153,7 +153,7 @@ aimer.i: aimer.cpp.i
 
 # target to preprocess a source file
 aimer.cpp.i:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/aimer.cpp.i
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/aimer.cpp.i
 .PHONY : aimer.cpp.i
 
 aimer.s: aimer.cpp.s
@@ -161,7 +161,7 @@ aimer.s: aimer.cpp.s
 
 # target to generate assembly for a file
 aimer.cpp.s:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/aimer.cpp.s
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/aimer.cpp.s
 .PHONY : aimer.cpp.s
 
 armor.o: armor.cpp.o
@@ -169,7 +169,7 @@ armor.o: armor.cpp.o
 
 # target to build an object file
 armor.cpp.o:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/armor.cpp.o
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/armor.cpp.o
 .PHONY : armor.cpp.o
 
 armor.i: armor.cpp.i
@@ -177,7 +177,7 @@ armor.i: armor.cpp.i
 
 # target to preprocess a source file
 armor.cpp.i:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/armor.cpp.i
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/armor.cpp.i
 .PHONY : armor.cpp.i
 
 armor.s: armor.cpp.s
@@ -185,7 +185,7 @@ armor.s: armor.cpp.s
 
 # target to generate assembly for a file
 armor.cpp.s:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/armor.cpp.s
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/armor.cpp.s
 .PHONY : armor.cpp.s
 
 classifier.o: classifier.cpp.o
@@ -193,7 +193,7 @@ classifier.o: classifier.cpp.o
 
 # target to build an object file
 classifier.cpp.o:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/classifier.cpp.o
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/classifier.cpp.o
 .PHONY : classifier.cpp.o
 
 classifier.i: classifier.cpp.i
@@ -201,7 +201,7 @@ classifier.i: classifier.cpp.i
 
 # target to preprocess a source file
 classifier.cpp.i:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/classifier.cpp.i
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/classifier.cpp.i
 .PHONY : classifier.cpp.i
 
 classifier.s: classifier.cpp.s
@@ -209,7 +209,7 @@ classifier.s: classifier.cpp.s
 
 # target to generate assembly for a file
 classifier.cpp.s:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/classifier.cpp.s
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/classifier.cpp.s
 .PHONY : classifier.cpp.s
 
 detector.o: detector.cpp.o
@@ -217,7 +217,7 @@ detector.o: detector.cpp.o
 
 # target to build an object file
 detector.cpp.o:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/detector.cpp.o
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/detector.cpp.o
 .PHONY : detector.cpp.o
 
 detector.i: detector.cpp.i
@@ -225,7 +225,7 @@ detector.i: detector.cpp.i
 
 # target to preprocess a source file
 detector.cpp.i:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/detector.cpp.i
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/detector.cpp.i
 .PHONY : detector.cpp.i
 
 detector.s: detector.cpp.s
@@ -233,63 +233,15 @@ detector.s: detector.cpp.s
 
 # target to generate assembly for a file
 detector.cpp.s:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/detector.cpp.s
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/detector.cpp.s
 .PHONY : detector.cpp.s
-
-multithread/commandgener.o: multithread/commandgener.cpp.o
-.PHONY : multithread/commandgener.o
-
-# target to build an object file
-multithread/commandgener.cpp.o:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.o
-.PHONY : multithread/commandgener.cpp.o
-
-multithread/commandgener.i: multithread/commandgener.cpp.i
-.PHONY : multithread/commandgener.i
-
-# target to preprocess a source file
-multithread/commandgener.cpp.i:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.i
-.PHONY : multithread/commandgener.cpp.i
-
-multithread/commandgener.s: multithread/commandgener.cpp.s
-.PHONY : multithread/commandgener.s
-
-# target to generate assembly for a file
-multithread/commandgener.cpp.s:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.s
-.PHONY : multithread/commandgener.cpp.s
-
-multithread/mt_detector.o: multithread/mt_detector.cpp.o
-.PHONY : multithread/mt_detector.o
-
-# target to build an object file
-multithread/mt_detector.cpp.o:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/mt_detector.cpp.o
-.PHONY : multithread/mt_detector.cpp.o
-
-multithread/mt_detector.i: multithread/mt_detector.cpp.i
-.PHONY : multithread/mt_detector.i
-
-# target to preprocess a source file
-multithread/mt_detector.cpp.i:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/mt_detector.cpp.i
-.PHONY : multithread/mt_detector.cpp.i
-
-multithread/mt_detector.s: multithread/mt_detector.cpp.s
-.PHONY : multithread/mt_detector.s
-
-# target to generate assembly for a file
-multithread/mt_detector.cpp.s:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/mt_detector.cpp.s
-.PHONY : multithread/mt_detector.cpp.s
 
 planner/planner.o: planner/planner.cpp.o
 .PHONY : planner/planner.o
 
 # target to build an object file
 planner/planner.cpp.o:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/planner/planner.cpp.o
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/planner/planner.cpp.o
 .PHONY : planner/planner.cpp.o
 
 planner/planner.i: planner/planner.cpp.i
@@ -297,7 +249,7 @@ planner/planner.i: planner/planner.cpp.i
 
 # target to preprocess a source file
 planner/planner.cpp.i:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/planner/planner.cpp.i
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/planner/planner.cpp.i
 .PHONY : planner/planner.cpp.i
 
 planner/planner.s: planner/planner.cpp.s
@@ -305,7 +257,7 @@ planner/planner.s: planner/planner.cpp.s
 
 # target to generate assembly for a file
 planner/planner.cpp.s:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/planner/planner.cpp.s
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/planner/planner.cpp.s
 .PHONY : planner/planner.cpp.s
 
 shooter.o: shooter.cpp.o
@@ -313,7 +265,7 @@ shooter.o: shooter.cpp.o
 
 # target to build an object file
 shooter.cpp.o:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/shooter.cpp.o
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/shooter.cpp.o
 .PHONY : shooter.cpp.o
 
 shooter.i: shooter.cpp.i
@@ -321,7 +273,7 @@ shooter.i: shooter.cpp.i
 
 # target to preprocess a source file
 shooter.cpp.i:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/shooter.cpp.i
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/shooter.cpp.i
 .PHONY : shooter.cpp.i
 
 shooter.s: shooter.cpp.s
@@ -329,7 +281,7 @@ shooter.s: shooter.cpp.s
 
 # target to generate assembly for a file
 shooter.cpp.s:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/shooter.cpp.s
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/shooter.cpp.s
 .PHONY : shooter.cpp.s
 
 solver.o: solver.cpp.o
@@ -337,7 +289,7 @@ solver.o: solver.cpp.o
 
 # target to build an object file
 solver.cpp.o:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/solver.cpp.o
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/solver.cpp.o
 .PHONY : solver.cpp.o
 
 solver.i: solver.cpp.i
@@ -345,7 +297,7 @@ solver.i: solver.cpp.i
 
 # target to preprocess a source file
 solver.cpp.i:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/solver.cpp.i
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/solver.cpp.i
 .PHONY : solver.cpp.i
 
 solver.s: solver.cpp.s
@@ -353,7 +305,7 @@ solver.s: solver.cpp.s
 
 # target to generate assembly for a file
 solver.cpp.s:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/solver.cpp.s
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/solver.cpp.s
 .PHONY : solver.cpp.s
 
 target.o: target.cpp.o
@@ -361,7 +313,7 @@ target.o: target.cpp.o
 
 # target to build an object file
 target.cpp.o:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/target.cpp.o
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/target.cpp.o
 .PHONY : target.cpp.o
 
 target.i: target.cpp.i
@@ -369,7 +321,7 @@ target.i: target.cpp.i
 
 # target to preprocess a source file
 target.cpp.i:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/target.cpp.i
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/target.cpp.i
 .PHONY : target.cpp.i
 
 target.s: target.cpp.s
@@ -377,7 +329,7 @@ target.s: target.cpp.s
 
 # target to generate assembly for a file
 target.cpp.s:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/target.cpp.s
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/target.cpp.s
 .PHONY : target.cpp.s
 
 tracker.o: tracker.cpp.o
@@ -385,7 +337,7 @@ tracker.o: tracker.cpp.o
 
 # target to build an object file
 tracker.cpp.o:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/tracker.cpp.o
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/tracker.cpp.o
 .PHONY : tracker.cpp.o
 
 tracker.i: tracker.cpp.i
@@ -393,7 +345,7 @@ tracker.i: tracker.cpp.i
 
 # target to preprocess a source file
 tracker.cpp.i:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/tracker.cpp.i
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/tracker.cpp.i
 .PHONY : tracker.cpp.i
 
 tracker.s: tracker.cpp.s
@@ -401,7 +353,7 @@ tracker.s: tracker.cpp.s
 
 # target to generate assembly for a file
 tracker.cpp.s:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/tracker.cpp.s
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/tracker.cpp.s
 .PHONY : tracker.cpp.s
 
 voter.o: voter.cpp.o
@@ -409,7 +361,7 @@ voter.o: voter.cpp.o
 
 # target to build an object file
 voter.cpp.o:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/voter.cpp.o
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/voter.cpp.o
 .PHONY : voter.cpp.o
 
 voter.i: voter.cpp.i
@@ -417,7 +369,7 @@ voter.i: voter.cpp.i
 
 # target to preprocess a source file
 voter.cpp.i:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/voter.cpp.i
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/voter.cpp.i
 .PHONY : voter.cpp.i
 
 voter.s: voter.cpp.s
@@ -425,7 +377,7 @@ voter.s: voter.cpp.s
 
 # target to generate assembly for a file
 voter.cpp.s:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/voter.cpp.s
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/voter.cpp.s
 .PHONY : voter.cpp.s
 
 yolo.o: yolo.cpp.o
@@ -433,7 +385,7 @@ yolo.o: yolo.cpp.o
 
 # target to build an object file
 yolo.cpp.o:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/yolo.cpp.o
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/yolo.cpp.o
 .PHONY : yolo.cpp.o
 
 yolo.i: yolo.cpp.i
@@ -441,7 +393,7 @@ yolo.i: yolo.cpp.i
 
 # target to preprocess a source file
 yolo.cpp.i:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/yolo.cpp.i
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/yolo.cpp.i
 .PHONY : yolo.cpp.i
 
 yolo.s: yolo.cpp.s
@@ -449,7 +401,7 @@ yolo.s: yolo.cpp.s
 
 # target to generate assembly for a file
 yolo.cpp.s:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/yolo.cpp.s
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/yolo.cpp.s
 .PHONY : yolo.cpp.s
 
 yolos/yolo11.o: yolos/yolo11.cpp.o
@@ -457,7 +409,7 @@ yolos/yolo11.o: yolos/yolo11.cpp.o
 
 # target to build an object file
 yolos/yolo11.cpp.o:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/yolos/yolo11.cpp.o
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/yolos/yolo11.cpp.o
 .PHONY : yolos/yolo11.cpp.o
 
 yolos/yolo11.i: yolos/yolo11.cpp.i
@@ -465,7 +417,7 @@ yolos/yolo11.i: yolos/yolo11.cpp.i
 
 # target to preprocess a source file
 yolos/yolo11.cpp.i:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/yolos/yolo11.cpp.i
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/yolos/yolo11.cpp.i
 .PHONY : yolos/yolo11.cpp.i
 
 yolos/yolo11.s: yolos/yolo11.cpp.s
@@ -473,7 +425,7 @@ yolos/yolo11.s: yolos/yolo11.cpp.s
 
 # target to generate assembly for a file
 yolos/yolo11.cpp.s:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/yolos/yolo11.cpp.s
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/yolos/yolo11.cpp.s
 .PHONY : yolos/yolo11.cpp.s
 
 yolos/yolov5.o: yolos/yolov5.cpp.o
@@ -481,7 +433,7 @@ yolos/yolov5.o: yolos/yolov5.cpp.o
 
 # target to build an object file
 yolos/yolov5.cpp.o:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/yolos/yolov5.cpp.o
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/yolos/yolov5.cpp.o
 .PHONY : yolos/yolov5.cpp.o
 
 yolos/yolov5.i: yolos/yolov5.cpp.i
@@ -489,7 +441,7 @@ yolos/yolov5.i: yolos/yolov5.cpp.i
 
 # target to preprocess a source file
 yolos/yolov5.cpp.i:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/yolos/yolov5.cpp.i
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/yolos/yolov5.cpp.i
 .PHONY : yolos/yolov5.cpp.i
 
 yolos/yolov5.s: yolos/yolov5.cpp.s
@@ -497,7 +449,7 @@ yolos/yolov5.s: yolos/yolov5.cpp.s
 
 # target to generate assembly for a file
 yolos/yolov5.cpp.s:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/yolos/yolov5.cpp.s
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/yolos/yolov5.cpp.s
 .PHONY : yolos/yolov5.cpp.s
 
 yolos/yolov8.o: yolos/yolov8.cpp.o
@@ -505,7 +457,7 @@ yolos/yolov8.o: yolos/yolov8.cpp.o
 
 # target to build an object file
 yolos/yolov8.cpp.o:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/yolos/yolov8.cpp.o
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/yolos/yolov8.cpp.o
 .PHONY : yolos/yolov8.cpp.o
 
 yolos/yolov8.i: yolos/yolov8.cpp.i
@@ -513,7 +465,7 @@ yolos/yolov8.i: yolos/yolov8.cpp.i
 
 # target to preprocess a source file
 yolos/yolov8.cpp.i:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/yolos/yolov8.cpp.i
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/yolos/yolov8.cpp.i
 .PHONY : yolos/yolov8.cpp.i
 
 yolos/yolov8.s: yolos/yolov8.cpp.s
@@ -521,7 +473,7 @@ yolos/yolov8.s: yolos/yolov8.cpp.s
 
 # target to generate assembly for a file
 yolos/yolov8.cpp.s:
-	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/auto_aim.dir/yolos/yolov8.cpp.s
+	cd /home/oconnor/Downloads/sp_vision_25-main/build && $(MAKE) $(MAKESILENT) -f tasks/auto_aim/CMakeFiles/task_auto_aim.dir/build.make tasks/auto_aim/CMakeFiles/task_auto_aim.dir/yolos/yolov8.cpp.s
 .PHONY : yolos/yolov8.cpp.s
 
 # Help Target
@@ -533,7 +485,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... auto_aim"
+	@echo "... task_auto_aim"
 	@echo "... aimer.o"
 	@echo "... aimer.i"
 	@echo "... aimer.s"
@@ -546,12 +498,6 @@ help:
 	@echo "... detector.o"
 	@echo "... detector.i"
 	@echo "... detector.s"
-	@echo "... multithread/commandgener.o"
-	@echo "... multithread/commandgener.i"
-	@echo "... multithread/commandgener.s"
-	@echo "... multithread/mt_detector.o"
-	@echo "... multithread/mt_detector.i"
-	@echo "... multithread/mt_detector.s"
 	@echo "... planner/planner.o"
 	@echo "... planner/planner.i"
 	@echo "... planner/planner.s"

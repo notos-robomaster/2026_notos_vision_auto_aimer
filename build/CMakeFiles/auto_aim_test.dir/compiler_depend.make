@@ -10,7 +10,6 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
   /home/oconnor/Downloads/sp_vision_25-main/io/serial/include/serial/serial.h \
   /home/oconnor/Downloads/sp_vision_25-main/io/serial/include/serial/v8stdint.h \
   /home/oconnor/Downloads/sp_vision_25-main/io/socketcan.hpp \
-  /home/oconnor/Downloads/sp_vision_25-main/io/usbcamera/usbcamera.hpp \
   /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/aimer.hpp \
   /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/armor.hpp \
   /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/planner/planner.hpp \
@@ -22,16 +21,12 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
   /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/target.hpp \
   /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/tracker.hpp \
   /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/yolo.hpp \
-  /home/oconnor/Downloads/sp_vision_25-main/tasks/omniperception/decider.hpp \
-  /home/oconnor/Downloads/sp_vision_25-main/tasks/omniperception/detection.hpp \
-  /home/oconnor/Downloads/sp_vision_25-main/tasks/omniperception/perceptron.hpp \
   /home/oconnor/Downloads/sp_vision_25-main/tools/exiter.hpp \
   /home/oconnor/Downloads/sp_vision_25-main/tools/extended_kalman_filter.hpp \
   /home/oconnor/Downloads/sp_vision_25-main/tools/img_tools.hpp \
   /home/oconnor/Downloads/sp_vision_25-main/tools/logger.hpp \
   /home/oconnor/Downloads/sp_vision_25-main/tools/math_tools.hpp \
   /home/oconnor/Downloads/sp_vision_25-main/tools/plotter.hpp \
-  /home/oconnor/Downloads/sp_vision_25-main/tools/thread_pool.hpp \
   /home/oconnor/Downloads/sp_vision_25-main/tools/thread_safe_queue.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
@@ -1513,14 +1508,6 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /usr/local/include/opencv4/opencv2/videoio.hpp:
 
-/usr/local/include/opencv4/opencv2/video/tracking.hpp:
-
-/usr/local/include/opencv4/opencv2/video/background_segm.hpp:
-
-/usr/local/include/opencv4/opencv2/video.hpp:
-
-/usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp:
-
 /usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:
 
 /usr/include/eigen3/Eigen/src/Core/MatrixBase.h:
@@ -1933,11 +1920,13 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
+/usr/include/c++/11/cxxabi.h:
+
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
-/opt/ros/humble/include/rcutils/rcutils/types/hash_map.h:
-
 /opt/ros/humble/include/rcl/rcl/service.h:
+
+/opt/ros/humble/include/rcutils/rcutils/types/hash_map.h:
 
 /usr/include/c++/11/bit:
 
@@ -2087,16 +2076,6 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64_multi_array__struct.hpp:
 
-/opt/ros/humble/include/rmw/rmw/ret_types.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:
-
-/opt/ros/humble/include/rmw/rmw/qos_policy_kind.h:
-
-/usr/include/c++/11/bits/stl_iterator_base_types.h:
-
-/usr/include/c++/11/bits/basic_ios.tcc:
-
 /opt/ros/humble/include/rclcpp/rclcpp/create_generic_subscription.hpp:
 
 /usr/include/c++/11/variant:
@@ -2108,6 +2087,12 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 /opt/ros/humble/include/rclcpp/rclcpp/create_client.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp:
+
+/usr/include/c++/11/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/11/bits/basic_ios.tcc:
+
+/opt/ros/humble/include/rmw/rmw/qos_policy_kind.h:
 
 /usr/include/c++/11/tr1/gamma.tcc:
 
@@ -2136,6 +2121,12 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
 
 /usr/include/errno.h:
+
+/usr/include/c++/11/array:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
+
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp:
 
 /usr/include/c++/11/pstl/execution_defs.h:
 
@@ -2181,6 +2172,12 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16intrin.h:
+
+/usr/include/c++/11/bits/indirect_array.h:
+
+/usr/local/include/opencv4/opencv2/flann/lsh_index.h:
+
 /usr/include/c++/11/bits/charconv.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp:
@@ -2219,10 +2216,6 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /usr/include/c++/11/bits/unordered_map.h:
 
-/home/oconnor/Downloads/sp_vision_25-main/tools/thread_pool.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
-
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
 
 /usr/include/c++/11/ext/alloc_traits.h:
@@ -2259,14 +2252,6 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /usr/include/c++/11/bits/stream_iterator.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16intrin.h:
-
-/usr/local/include/opencv4/opencv2/flann/lsh_index.h:
-
-/usr/include/c++/11/bits/indirect_array.h:
-
-/usr/include/c++/11/cxxabi.h:
-
 /usr/include/c++/11/bits/cxxabi_forced.h:
 
 /usr/include/spdlog/details/null_mutex.h:
@@ -2280,6 +2265,10 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 /usr/include/eigen3/Eigen/src/Core/Dot.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_enable_topic_statistics.hpp:
+
+/usr/include/c++/11/tuple:
 
 /opt/ros/humble/include/rcl/rcl/time.h:
 
@@ -2341,31 +2330,29 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp:
+/usr/include/c++/11/optional:
 
-/opt/ros/humble/include/rcl/rcl/domain_id.h:
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp:
 
-/usr/include/c++/11/bits/stl_deque.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp:
 
-/usr/include/c++/11/bits/predefined_ops.h:
+/usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h:
 
-/usr/include/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsPacketMath.h:
+/usr/include/spdlog/details/log_msg-inl.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__struct.hpp:
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
 
-/usr/include/c++/11/bits/invoke.h:
+/opt/ros/humble/include/rcutils/rcutils/types/uint8_array.h:
 
-/usr/include/c++/11/unordered_map:
+/opt/ros/humble/include/rmw/rmw/get_topic_names_and_types.h:
 
-/usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h:
+/opt/ros/humble/include/rclcpp/rclcpp/subscription_content_filter_options.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
+/usr/include/c++/11/bits/functexcept.h:
 
-/usr/include/c++/11/bits/atomic_base.h:
+/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
+/opt/ros/humble/include/rmw/rmw/ret_types.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp:
 
@@ -2377,27 +2364,17 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /usr/include/c++/11/bits/unique_lock.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
+/home/oconnor/Downloads/sp_vision_25-main/tools/plotter.hpp:
 
-/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
+/usr/local/include/opencv4/opencv2/dnn/utils/inference_engine.hpp:
 
-/opt/ros/humble/include/rcl/rcl/log_level.h:
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
-/usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h:
+/usr/include/c++/11/string:
 
-/opt/ros/humble/include/rmw/rmw/error_handling.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp:
 
-/usr/include/c++/11/bits/regex_error.h:
-
-/usr/include/x86_64-linux-gnu/bits/fcntl2.h:
-
-/home/oconnor/Downloads/sp_vision_25-main/io/gimbal/gimbal.hpp:
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseUtil.h:
-
-/usr/include/spdlog/common.h:
-
-/usr/local/include/opencv4/opencv2/objdetect/barcode.hpp:
+/opt/ros/humble/include/rcl/rcl/init_options.h:
 
 /home/oconnor/Downloads/sp_vision_25-main/tools/logger.hpp:
 
@@ -2411,13 +2388,11 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /opt/ros/humble/include/rmw/rmw/macros.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp:
+/usr/include/c++/11/stdlib.h:
 
-/usr/include/x86_64-linux-gnu/bits/statx.h:
+/usr/include/spdlog/logger-inl.h:
 
-/home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/shooter.hpp:
-
-/usr/local/include/opencv4/opencv2/core/check.hpp:
+/home/oconnor/Downloads/sp_vision_25-main/tools/img_tools.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp:
 
@@ -2461,6 +2436,18 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /usr/include/c++/11/bits/regex_automaton.tcc:
 
+/usr/include/c++/11/new:
+
+/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/parameter_client.hpp:
+
+/home/oconnor/Downloads/sp_vision_25-main/io/socketcan.hpp:
+
+/usr/include/c++/11/bits/stl_multimap.h:
+
+/home/oconnor/Downloads/sp_vision_25-main/tools/extended_kalman_filter.hpp:
+
 /usr/include/c++/11/bits/regex_executor.h:
 
 /usr/include/nlohmann/detail/string_escape.hpp:
@@ -2481,6 +2468,14 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
 
+/usr/include/eigen3/Eigen/src/Cholesky/LDLT.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Transform.h:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:
+
+/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/any_service_callback.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface_traits.hpp:
@@ -2497,53 +2492,9 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /usr/include/unistd.h:
 
-/usr/include/c++/11/array:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
-
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp:
-
-/home/oconnor/Downloads/sp_vision_25-main/tools/plotter.hpp:
-
-/usr/local/include/opencv4/opencv2/dnn/utils/inference_engine.hpp:
-
-/usr/include/c++/11/new:
-
-/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
-
-/home/oconnor/Downloads/sp_vision_25-main/io/socketcan.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/parameter_client.hpp:
-
-/usr/include/spdlog/logger-inl.h:
-
-/home/oconnor/Downloads/sp_vision_25-main/tools/img_tools.hpp:
-
-/usr/include/c++/11/stdlib.h:
-
-/home/oconnor/Downloads/sp_vision_25-main/tasks/omniperception/decider.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/Redux.h:
-
-/opt/ros/humble/include/rcl/rcl/timer.h:
-
-/usr/include/c++/11/bits/regex.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h:
-
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
-
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_Structs.h:
-
-/home/oconnor/Downloads/sp_vision_25-main/io/gimbal/simple_gimbal.hpp:
-
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_layout__struct.hpp:
-
-/opt/ros/humble/include/rmw/rmw/rmw.h:
-
-/home/oconnor/Downloads/sp_vision_25-main/tools/math_tools.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/NestByValue.h:
 
@@ -2551,23 +2502,7 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /home/oconnor/Downloads/sp_vision_25-main/tests/auto_aim_test.cpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/include/c++/11/string:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp:
-
-/home/oconnor/Downloads/sp_vision_25-main/tools/extended_kalman_filter.hpp:
-
-/usr/include/c++/11/bits/stl_multimap.h:
-
-/opt/ros/humble/include/rcl/rcl/init_options.h:
-
 /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:
-
-/home/oconnor/Downloads/sp_vision_25-main/tasks/omniperception/detection.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
 
 /usr/local/include/opencv4/opencv2/stitching/detail/util.hpp:
 
@@ -2599,6 +2534,10 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /usr/local/include/opencv4/opencv2/core/cuda.inl.hpp:
 
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp:
+
+/opt/ros/humble/include/rcl/rcl/domain_id.h:
+
 /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h:
 
 /home/oconnor/Downloads/sp_vision_25-main/io/camera.hpp:
@@ -2607,9 +2546,27 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
+/usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp:
+
 /opt/ros/humble/include/rcl/rcl/node_options.h:
 
 /usr/include/spdlog/details/backtracer.h:
+
+/home/oconnor/Downloads/sp_vision_25-main/io/gimbal/simple_gimbal.hpp:
+
+/usr/include/c++/11/bits/regex.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h:
+
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
+
+/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_Structs.h:
+
+/usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h:
+
+/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
+
+/opt/ros/humble/include/rcl/rcl/log_level.h:
 
 /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/planner/tinympc/tiny_api.hpp:
 
@@ -2623,7 +2580,15 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__struct.hpp:
+/usr/include/c++/11/cstddef:
+
+/opt/ros/humble/include/rcl/rcl/wait.h:
+
+/usr/include/c++/11/bits/cxxabi_init_exception.h:
+
+/usr/include/eigen3/Eigen/src/misc/Image.h:
+
+/usr/local/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:
 
@@ -2633,25 +2598,41 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /usr/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorChipping.h:
 
-/opt/ros/humble/include/rmw/rmw/get_topic_names_and_types.h:
+/usr/include/c++/11/bits/atomic_futex.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/subscription_content_filter_options.hpp:
+/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h:
 
-/usr/include/c++/11/bits/functexcept.h:
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
 
-/usr/include/c++/11/optional:
+/opt/ros/humble/include/rclcpp/rclcpp/guard_condition.hpp:
 
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp:
+/usr/include/c++/11/bits/invoke.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__struct.hpp:
 
-/opt/ros/humble/include/rcutils/rcutils/types/uint8_array.h:
+/usr/include/c++/11/unordered_map:
 
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
+/usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h:
 
-/usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h:
+/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:
 
-/usr/include/spdlog/details/log_msg-inl.h:
+/usr/include/c++/11/ext/string_conversions.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:
+
+/usr/include/c++/11/pstl/glue_memory_defs.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:
 
 /usr/include/c++/11/istream:
 
@@ -2675,51 +2656,31 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /usr/include/nlohmann/detail/json_ref.hpp:
 
-/usr/include/c++/11/cstddef:
+/usr/include/eigen3/Eigen/src/Core/Redux.h:
 
-/opt/ros/humble/include/rcl/rcl/wait.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
 
-/usr/include/c++/11/bits/cxxabi_init_exception.h:
+/home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/shooter.hpp:
 
-/usr/include/eigen3/Eigen/src/misc/Image.h:
+/usr/local/include/opencv4/opencv2/core/check.hpp:
 
-/usr/local/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp:
 
-/usr/include/eigen3/Eigen/src/Cholesky/LDLT.h:
+/usr/include/x86_64-linux-gnu/bits/statx.h:
 
-/usr/include/eigen3/Eigen/src/Geometry/Transform.h:
+/opt/ros/humble/include/rmw/rmw/error_handling.h:
 
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:
+/usr/include/c++/11/bits/regex_error.h:
 
-/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h:
+/usr/include/x86_64-linux-gnu/bits/fcntl2.h:
 
-/usr/include/c++/11/bits/atomic_futex.h:
+/home/oconnor/Downloads/sp_vision_25-main/io/gimbal/gimbal.hpp:
 
-/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h:
+/usr/include/eigen3/Eigen/src/SparseCore/SparseUtil.h:
 
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
+/usr/include/spdlog/common.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/guard_condition.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:
-
-/usr/include/c++/11/ext/string_conversions.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:
-
-/usr/include/c++/11/pstl/glue_memory_defs.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:
+/usr/local/include/opencv4/opencv2/objdetect/barcode.hpp:
 
 /usr/include/asm-generic/int-ll64.h:
 
@@ -2742,6 +2703,12 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 /opt/ros/humble/include/rclcpp/rclcpp/create_service.hpp:
 
 /opt/ros/humble/include/rmw/rmw/impl/config.h:
+
+/opt/ros/humble/include/rcl/rcl/types.h:
+
+/usr/include/eigen3/Eigen/src/Core/IndexedView.h:
+
+/opt/ros/humble/include/rcl/rcl/arguments.h:
 
 /usr/include/c++/11/limits:
 
@@ -2777,6 +2744,8 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp:
 
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__struct.hpp:
+
 /usr/include/c++/11/bits/ios_base.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp:
@@ -2785,15 +2754,23 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:
 
-/opt/ros/humble/include/rcl/rcl/arguments.h:
+/usr/local/include/opencv4/opencv2/video/tracking.hpp:
 
-/opt/ros/humble/include/rcl/rcl/types.h:
+/opt/ros/humble/include/rcl/rcl/timer.h:
 
-/usr/include/eigen3/Eigen/src/Core/IndexedView.h:
+/usr/include/c++/11/bits/atomic_base.h:
 
-/usr/include/c++/11/tuple:
+/usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_enable_topic_statistics.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
+
+/usr/include/c++/11/bits/stl_deque.h:
+
+/usr/include/c++/11/bits/predefined_ops.h:
+
+/usr/include/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsPacketMath.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp:
 
@@ -2851,12 +2828,6 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /usr/include/c++/11/bits/forward_list.tcc:
 
-/usr/include/c++/11/tr1/poly_hermite.tcc:
-
-/usr/local/include/opencv4/opencv2/core/affine.hpp:
-
-/usr/include/nlohmann/detail/conversions/to_json.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:
@@ -2906,6 +2877,8 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bitalgintrin.h:
 
 /usr/local/include/opencv4/opencv2/core/fast_math.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
 
 /usr/include/eigen3/Eigen/src/Cholesky/LLT.h:
 
@@ -2970,6 +2943,12 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 /usr/include/c++/11/bits/sstream.tcc:
 
 /usr/include/yaml-cpp/node/detail/iterator.h:
+
+/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/serialized_message.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:
 
@@ -3161,13 +3140,15 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /opt/ros/humble/include/rclcpp/rclcpp/time.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:
+/home/oconnor/Downloads/sp_vision_25-main/tools/math_tools.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/serialized_message.hpp:
+/usr/include/c++/11/tr1/poly_hermite.tcc:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h:
+/usr/include/nlohmann/detail/conversions/to_json.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
+/usr/local/include/opencv4/opencv2/core/affine.hpp:
+
+/opt/ros/humble/include/rmw/rmw/rmw.h:
 
 /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h:
 
@@ -3222,8 +3203,6 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:
 
 /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h:
-
-/home/oconnor/Downloads/sp_vision_25-main/io/usbcamera/usbcamera.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h:
 
@@ -3355,9 +3334,9 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /usr/include/eigen3/Eigen/src/SparseCore/SparseMatrix.h:
 
-/usr/include/eigen3/Eigen/src/Core/Reverse.h:
-
 /usr/include/eigen3/Eigen/src/LU/InverseImpl.h:
+
+/usr/include/eigen3/Eigen/src/Core/Reverse.h:
 
 /usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:
 
@@ -3625,10 +3604,6 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /usr/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorShuffling.h:
 
-/usr/include/spdlog/details/circular_q.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
 
 /usr/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorStorage.h:
@@ -3670,10 +3645,6 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 /usr/include/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsBFloat16.h:
 
 /usr/include/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsImpl.h:
-
-/usr/local/include/opencv4/opencv2/stitching/warpers.hpp:
-
-/usr/include/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsPacketMath.h:
 
 /usr/include/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsArrayAPI.h:
 
@@ -3835,6 +3806,12 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/spdlog/details/circular_q.h:
+
+/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
+
 /usr/include/spdlog/details/console_globals.h:
 
 /usr/include/spdlog/details/fmt_helper.h:
@@ -3989,9 +3966,9 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
 
-/opt/ros/humble/include/rcutils/rcutils/logging_macros.h:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
+
+/opt/ros/humble/include/rcutils/rcutils/logging_macros.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/fxsrintrin.h:
 
@@ -4221,6 +4198,8 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 
 /usr/include/x86_64-linux-gnu/sys/stat.h:
 
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
 /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
 
 /usr/include/yaml-cpp/binary.h:
@@ -4240,8 +4219,6 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /usr/include/yaml-cpp/node/detail/node_ref.h:
-
-/home/oconnor/Downloads/sp_vision_25-main/tasks/omniperception/perceptron.hpp:
 
 /usr/include/yaml-cpp/node/iterator.h:
 
@@ -4506,3 +4483,11 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: /home/oconnor/Downloads/
 /usr/local/include/opencv4/opencv2/stitching/detail/seam_finders.hpp:
 
 /usr/local/include/opencv4/opencv2/stitching/detail/util_inl.hpp:
+
+/usr/include/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsPacketMath.h:
+
+/usr/local/include/opencv4/opencv2/stitching/warpers.hpp:
+
+/usr/local/include/opencv4/opencv2/video.hpp:
+
+/usr/local/include/opencv4/opencv2/video/background_segm.hpp:

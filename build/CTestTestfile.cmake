@@ -7,5 +7,3 @@
 subdirs("tools")
 subdirs("io")
 subdirs("tasks/auto_aim")
-subdirs("tasks/auto_buff")
-subdirs("tasks/omniperception")

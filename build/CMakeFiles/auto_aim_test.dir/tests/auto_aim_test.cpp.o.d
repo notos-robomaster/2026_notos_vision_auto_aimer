@@ -1359,13 +1359,7 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o: \
  /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/shooter.hpp \
  /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/tracker.hpp \
  /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/solver.hpp \
- /home/oconnor/Downloads/sp_vision_25-main/tasks/omniperception/perceptron.hpp \
- /home/oconnor/Downloads/sp_vision_25-main/tasks/omniperception/decider.hpp \
- /home/oconnor/Downloads/sp_vision_25-main/tasks/omniperception/detection.hpp \
- /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/armor.hpp \
- /home/oconnor/Downloads/sp_vision_25-main/io/usbcamera/usbcamera.hpp \
  /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/yolo.hpp \
- /home/oconnor/Downloads/sp_vision_25-main/tools/thread_pool.hpp \
  /home/oconnor/Downloads/sp_vision_25-main/tools/exiter.hpp \
  /home/oconnor/Downloads/sp_vision_25-main/tools/img_tools.hpp \
  /home/oconnor/Downloads/sp_vision_25-main/tools/math_tools.hpp \

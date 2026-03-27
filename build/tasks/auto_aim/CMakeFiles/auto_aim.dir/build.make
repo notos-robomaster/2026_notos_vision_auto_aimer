@@ -254,38 +254,10 @@ tasks/auto_aim/CMakeFiles/auto_aim.dir/yolos/yolo11.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/auto_aim.dir/yolos/yolo11.cpp.s"
 	cd /home/oconnor/Downloads/sp_vision_25-main/build/tasks/auto_aim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/yolos/yolo11.cpp -o CMakeFiles/auto_aim.dir/yolos/yolo11.cpp.s
 
-tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.o: tasks/auto_aim/CMakeFiles/auto_aim.dir/flags.make
-tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.o: /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/multithread/commandgener.cpp
-tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.o: tasks/auto_aim/CMakeFiles/auto_aim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/oconnor/Downloads/sp_vision_25-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.o"
-	cd /home/oconnor/Downloads/sp_vision_25-main/build/tasks/auto_aim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.o -MF CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.o.d -o CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.o -c /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/multithread/commandgener.cpp
-
-tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.i"
-	cd /home/oconnor/Downloads/sp_vision_25-main/build/tasks/auto_aim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/multithread/commandgener.cpp > CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.i
-
-tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.s"
-	cd /home/oconnor/Downloads/sp_vision_25-main/build/tasks/auto_aim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/multithread/commandgener.cpp -o CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.s
-
-tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/mt_detector.cpp.o: tasks/auto_aim/CMakeFiles/auto_aim.dir/flags.make
-tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/mt_detector.cpp.o: /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/multithread/mt_detector.cpp
-tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/mt_detector.cpp.o: tasks/auto_aim/CMakeFiles/auto_aim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/oconnor/Downloads/sp_vision_25-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/mt_detector.cpp.o"
-	cd /home/oconnor/Downloads/sp_vision_25-main/build/tasks/auto_aim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/mt_detector.cpp.o -MF CMakeFiles/auto_aim.dir/multithread/mt_detector.cpp.o.d -o CMakeFiles/auto_aim.dir/multithread/mt_detector.cpp.o -c /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/multithread/mt_detector.cpp
-
-tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/mt_detector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/auto_aim.dir/multithread/mt_detector.cpp.i"
-	cd /home/oconnor/Downloads/sp_vision_25-main/build/tasks/auto_aim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/multithread/mt_detector.cpp > CMakeFiles/auto_aim.dir/multithread/mt_detector.cpp.i
-
-tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/mt_detector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/auto_aim.dir/multithread/mt_detector.cpp.s"
-	cd /home/oconnor/Downloads/sp_vision_25-main/build/tasks/auto_aim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/multithread/mt_detector.cpp -o CMakeFiles/auto_aim.dir/multithread/mt_detector.cpp.s
-
 tasks/auto_aim/CMakeFiles/auto_aim.dir/planner/planner.cpp.o: tasks/auto_aim/CMakeFiles/auto_aim.dir/flags.make
 tasks/auto_aim/CMakeFiles/auto_aim.dir/planner/planner.cpp.o: /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/planner/planner.cpp
 tasks/auto_aim/CMakeFiles/auto_aim.dir/planner/planner.cpp.o: tasks/auto_aim/CMakeFiles/auto_aim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/oconnor/Downloads/sp_vision_25-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object tasks/auto_aim/CMakeFiles/auto_aim.dir/planner/planner.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/oconnor/Downloads/sp_vision_25-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object tasks/auto_aim/CMakeFiles/auto_aim.dir/planner/planner.cpp.o"
 	cd /home/oconnor/Downloads/sp_vision_25-main/build/tasks/auto_aim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tasks/auto_aim/CMakeFiles/auto_aim.dir/planner/planner.cpp.o -MF CMakeFiles/auto_aim.dir/planner/planner.cpp.o.d -o CMakeFiles/auto_aim.dir/planner/planner.cpp.o -c /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/planner/planner.cpp
 
 tasks/auto_aim/CMakeFiles/auto_aim.dir/planner/planner.cpp.i: cmake_force
@@ -311,8 +283,6 @@ auto_aim_OBJECTS = \
 "CMakeFiles/auto_aim.dir/yolos/yolov5.cpp.o" \
 "CMakeFiles/auto_aim.dir/yolos/yolov8.cpp.o" \
 "CMakeFiles/auto_aim.dir/yolos/yolo11.cpp.o" \
-"CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.o" \
-"CMakeFiles/auto_aim.dir/multithread/mt_detector.cpp.o" \
 "CMakeFiles/auto_aim.dir/planner/planner.cpp.o"
 
 # External object files for target auto_aim
@@ -331,12 +301,10 @@ tasks/auto_aim/libauto_aim.a: tasks/auto_aim/CMakeFiles/auto_aim.dir/yolo.cpp.o
 tasks/auto_aim/libauto_aim.a: tasks/auto_aim/CMakeFiles/auto_aim.dir/yolos/yolov5.cpp.o
 tasks/auto_aim/libauto_aim.a: tasks/auto_aim/CMakeFiles/auto_aim.dir/yolos/yolov8.cpp.o
 tasks/auto_aim/libauto_aim.a: tasks/auto_aim/CMakeFiles/auto_aim.dir/yolos/yolo11.cpp.o
-tasks/auto_aim/libauto_aim.a: tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.o
-tasks/auto_aim/libauto_aim.a: tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/mt_detector.cpp.o
 tasks/auto_aim/libauto_aim.a: tasks/auto_aim/CMakeFiles/auto_aim.dir/planner/planner.cpp.o
 tasks/auto_aim/libauto_aim.a: tasks/auto_aim/CMakeFiles/auto_aim.dir/build.make
 tasks/auto_aim/libauto_aim.a: tasks/auto_aim/CMakeFiles/auto_aim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/oconnor/Downloads/sp_vision_25-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX static library libauto_aim.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/oconnor/Downloads/sp_vision_25-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX static library libauto_aim.a"
 	cd /home/oconnor/Downloads/sp_vision_25-main/build/tasks/auto_aim && $(CMAKE_COMMAND) -P CMakeFiles/auto_aim.dir/cmake_clean_target.cmake
 	cd /home/oconnor/Downloads/sp_vision_25-main/build/tasks/auto_aim && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/auto_aim.dir/link.txt --verbose=$(VERBOSE)
 

@@ -11,7 +11,6 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o
  /home/oconnor/Downloads/sp_vision_25-main/io/serial/include/serial/serial.h
  /home/oconnor/Downloads/sp_vision_25-main/io/serial/include/serial/v8stdint.h
  /home/oconnor/Downloads/sp_vision_25-main/io/socketcan.hpp
- /home/oconnor/Downloads/sp_vision_25-main/io/usbcamera/usbcamera.hpp
  /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/aimer.hpp
  /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/armor.hpp
  /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/planner/planner.hpp
@@ -23,16 +22,12 @@ CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o
  /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/target.hpp
  /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/tracker.hpp
  /home/oconnor/Downloads/sp_vision_25-main/tasks/auto_aim/yolo.hpp
- /home/oconnor/Downloads/sp_vision_25-main/tasks/omniperception/decider.hpp
- /home/oconnor/Downloads/sp_vision_25-main/tasks/omniperception/detection.hpp
- /home/oconnor/Downloads/sp_vision_25-main/tasks/omniperception/perceptron.hpp
  /home/oconnor/Downloads/sp_vision_25-main/tools/exiter.hpp
  /home/oconnor/Downloads/sp_vision_25-main/tools/extended_kalman_filter.hpp
  /home/oconnor/Downloads/sp_vision_25-main/tools/img_tools.hpp
  /home/oconnor/Downloads/sp_vision_25-main/tools/logger.hpp
  /home/oconnor/Downloads/sp_vision_25-main/tools/math_tools.hpp
  /home/oconnor/Downloads/sp_vision_25-main/tools/plotter.hpp
- /home/oconnor/Downloads/sp_vision_25-main/tools/thread_pool.hpp
  /home/oconnor/Downloads/sp_vision_25-main/tools/thread_safe_queue.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp
