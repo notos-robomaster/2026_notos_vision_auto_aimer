@@ -132,7 +132,7 @@ void SimpleSerial::receive_loop() {
               state_->pitch_deg = pitch_deg;
               state_->yaw_deg = yaw_deg;
               state_->roll_deg = roll_deg;
-              state_->ts = (double)std::chrono::duration_cast<std::chrono::duration<double>>(std::chrono::steady_clock::now().time_since_epoch()).count();
+              state_->timestamp = std::chrono::steady_clock::now();
               state_->valid = true;
             }
           }

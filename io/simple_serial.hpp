@@ -2,6 +2,7 @@
 #define IO_SIMPLE_SERIAL_HPP
 
 #include <string>
+#include <chrono>
 #include <mutex>
 #include <thread>
 #include <atomic>
@@ -17,7 +18,7 @@ struct SimpleSerialState {
   double pitch_deg = 0.0;
   double yaw_deg = 0.0;
   double roll_deg = 0.0;
-  double ts = 0.0;
+  std::chrono::steady_clock::time_point timestamp;
   bool valid = false;
 };
 

@@ -110,7 +110,7 @@ int main(int argc, char * argv[])
     io::Camera camera(config_path);
 
     tools::logger()->info("Step 2: Initializing YOLO...");
-    auto_aim::YOLO yolo(config_path);
+    auto_aim::YOLO yolo(config_path, display);
 
     tools::logger()->info("Step 3: Initializing Solver...");
     auto_aim::Solver solver(config_path);
@@ -135,6 +135,7 @@ int main(int argc, char * argv[])
     if (cfg["angle_mode"]) {
       angle_mode = cfg["angle_mode"].as<bool>();
     }
+    double bullet_speed = cfg["bullet_speed"] ? cfg["bullet_speed"].as<double>() : 27.0;
 
     // Step 5: 初始化控制器（MPC或Aimer）
     if (use_mpc) {
@@ -250,22 +251,27 @@ int main(int argc, char * argv[])
       /// 自瞄核心逻辑开始
 
       // 获取云台姿态：优先使用 simple_state（下位机上报的绝对角度），否则使用 gimbal / simple_gimbal / 固定
-      if (simple_state && simple_state->valid) {
-        double yaw_deg = 0.0, pitch_deg = 0.0, roll_deg = 0.0;
-        {
-          std::lock_guard<std::mutex> lk(simple_state->m);
-          pitch_deg = simple_state->pitch_deg;
-          yaw_deg = simple_state->yaw_deg;
-          // yaw_deg = -yaw_deg;  // 反转 yaw 以匹配上位机坐标系定义
-          roll_deg = simple_state->roll_deg;
-        }
+      bool simple_state_valid = false;
+      std::chrono::steady_clock::time_point simple_state_timestamp;
+      double yaw_deg = 0.0, pitch_deg = 0.0, roll_deg = 0.0;
+      if (simple_state) {
+        std::lock_guard<std::mutex> lk(simple_state->m);
+        simple_state_valid = simple_state->valid;
+        simple_state_timestamp = simple_state->timestamp;
+        pitch_deg = simple_state->pitch_deg;
+        yaw_deg = simple_state->yaw_deg;
+        roll_deg = simple_state->roll_deg;
+      }
+
+      if (simple_state && simple_state_valid) {
+        // yaw_deg = -yaw_deg;  // 反转 yaw 以匹配上位机坐标系定义
         
         // 调试输出：接收到的原始姿态（每帧都输出）
         // std::cout << "\n=== 云台姿态调试 Frame " << frame_count << " ===" << std::endl;  // 注释掉避免拖慢帧率
         // std::cout << "接收: Pitch=" << pitch_deg << "°, Yaw=" << yaw_deg << "°, Roll=" << roll_deg << "°" << std::endl;
         
         // 检查姿态数据的时效性
-        double imu_age = current_time - simple_state->ts;
+        double imu_age = std::chrono::duration<double>(timestamp - simple_state_timestamp).count();
         if (imu_age > 0.05) {  // 超过50ms认为数据过时
           tools::logger()->warn("[Frame {}] IMU数据过时: 延迟={:.1f}ms", frame_count, imu_age * 1000);
         }
@@ -364,7 +370,7 @@ int main(int argc, char * argv[])
         if (!targets.empty()) {
           target_opt = targets.front();
         }
-        auto plan = planner->plan(target_opt, 27.0);  // 27 m/s子弹速度
+        auto plan = planner->plan(target_opt, bullet_speed);
         
         // 保存控制指令到变量
         current_cmd_pitch = plan.pitch * 57.3;  // 转为度
@@ -422,7 +428,7 @@ int main(int argc, char * argv[])
         
       } else if (aimer.get()) {
         // 传统Aimer模式
-        auto command = aimer->aim(targets, timestamp, 27, false);
+        auto command = aimer->aim(targets, timestamp, bullet_speed, false);
 
         // 使用Shooter的专业开火判断（类似sentry.cpp）
         Eigen::Vector3d gimbal_pos = tools::eulers(gimbal_q.toRotationMatrix(), 2, 1, 0);
@@ -646,7 +652,7 @@ int main(int argc, char * argv[])
       plotter.plot(data);
 
       // 降低显示频率：每3帧更新一次画面（imshow+waitKey是最大瓶颈，~15-20ms）
-      if (frame_count % 3 == 0) {
+      if (display && frame_count % 3 == 0) {
         cv::imshow("reprojection", img);
         cv::waitKey(1);
       }
