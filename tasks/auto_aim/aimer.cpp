@@ -57,7 +57,7 @@ io::Command Aimer::aim(
     target.predict(future);
   }
 
-  auto aim_point0 = choose_aim_point(target);
+  auto aim_point0 = choose_aim_point(target, bullet_speed);
   debug_aim_point = aim_point0;
   if (!aim_point0.valid) {
     // tools::logger()->debug("Invalid aim_point0.");
@@ -86,7 +86,7 @@ io::Command Aimer::aim(
     iteration_target[iter].predict(predict_time);
 
     // 计算瞄准点
-    auto aim_point = choose_aim_point(iteration_target[iter]);
+    auto aim_point = choose_aim_point(iteration_target[iter], bullet_speed);
     debug_aim_point = aim_point;
     if (!aim_point.valid) {
       return {false, false, 0, 0};
@@ -141,7 +141,7 @@ io::Command Aimer::aim(
   return command;
 }
 
-AimPoint Aimer::choose_aim_point(const Target & target)
+AimPoint Aimer::choose_aim_point(const Target & target, double bullet_speed)
 {
   Eigen::VectorXd ekf_x = target.ekf_x();
   std::vector<Eigen::Vector4d> armor_xyza_list = target.armor_xyza_list();
@@ -160,7 +160,7 @@ AimPoint Aimer::choose_aim_point(const Target & target)
   }
 
   // 不考虑小陀螺
-  if (std::abs(target.ekf_x()[8]) <= 2 && target.name != ArmorName::outpost) {
+  if (std::abs(ekf_x[7]) <= 2 && target.name != ArmorName::outpost) {
     // 选择在可射击范围内的装甲板
     std::vector<int> id_list;
     for (int i = 0; i < armor_num; i++) {
@@ -198,14 +198,42 @@ AimPoint Aimer::choose_aim_point(const Target & target)
     leaving_angle = leaving_angle_;
   }
 
-  // 在小陀螺时，一侧的装甲板不断出现，另一侧的装甲板不断消失，显然前者被打中的概率更高
+  int best_id = -1;
+  int locked_id = static_cast<int>(lock_id_);
+  double best_score = 1e9;
+  double locked_score = 1e9;
+
   for (int i = 0; i < armor_num; i++) {
-    if (std::abs(delta_angle_list[i]) > coming_angle) continue;
-    if (ekf_x[7] > 0 && delta_angle_list[i] < leaving_angle) return {true, armor_xyza_list[i]};
-    if (ekf_x[7] < 0 && delta_angle_list[i] > -leaving_angle) return {true, armor_xyza_list[i]};
+    const auto delta_angle = delta_angle_list[i];
+    if (std::abs(delta_angle) > coming_angle) continue;
+    if (ekf_x[7] > 0 && delta_angle >= leaving_angle) continue;
+    if (ekf_x[7] < 0 && delta_angle <= -leaving_angle) continue;
+
+    Eigen::Vector3d xyz = armor_xyza_list[i].head(3);
+    double distance = std::sqrt(xyz.x() * xyz.x() + xyz.y() * xyz.y());
+    tools::Trajectory trajectory(bullet_speed, distance, xyz.z());
+    if (trajectory.unsolvable) continue;
+
+    double score = std::abs(delta_angle) + 0.2 * trajectory.fly_time;
+    if (i == locked_id) locked_score = score;
+    if (score < best_score) {
+      best_score = score;
+      best_id = i;
+    }
   }
 
-  return {false, armor_xyza_list[0]};
+  if (best_id < 0) {
+    return {false, armor_xyza_list[0]};
+  }
+
+  constexpr double SWITCH_MARGIN = 5.0 / 57.3;
+  if (locked_id >= 0 && locked_id < static_cast<int>(armor_num) &&
+      locked_score < 1e8 && best_score + SWITCH_MARGIN > locked_score) {
+    best_id = locked_id;
+  }
+
+  lock_id_ = best_id;
+  return {true, armor_xyza_list[best_id]};
 }
 
 }  // namespace auto_aim
